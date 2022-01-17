@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_background2"
+        tools:context=".ui.MainActivity">
+
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:constraint_referenced_ids="btnEditRestaurant,btn_fast_draw_select,btnAboutUs"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Button
+            android:id="@+id/btnEditRestaurant"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/edit_restaurant" />
+
+        <Button
+            android:id="@+id/btn_fast_draw_select"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/fast_draw_lots" />
+
+        <Button
+            android:id="@+id/btnAboutUs"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/about_us" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

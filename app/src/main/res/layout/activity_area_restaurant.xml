@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_background1"
+        tools:context=".ui.AreaRestaurantList.AreaRestaurantActivity">
+
+        <TextView
+            android:id="@+id/tvAreaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="宜蘭縣" />
+
+        <Button
+            android:id="@+id/btnAddRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/addRestaurant"
+            app:layout_constraintTop_toBottomOf="@+id/tvAreaName"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnEditRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/editRestaurant"
+            app:layout_constraintTop_toBottomOf="@+id/tvAreaName"
+            app:layout_constraintStart_toEndOf="@+id/btnAddRestaurant" />
+
+        <Button
+            android:id="@+id/btnDeleteRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/deleteRestaurant"
+            app:layout_constraintTop_toBottomOf="@+id/tvAreaName"
+            app:layout_constraintStart_toEndOf="@+id/btnEditRestaurant" />
+
+        <TextView
+            android:id="@+id/tvCheckTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/checkToAddOrDelete"
+            app:layout_constraintTop_toBottomOf="@+id/btnAddRestaurant"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/btnSelectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/selectAll"
+            app:layout_constraintTop_toTopOf="@+id/tvCheckTip"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCheckTip"
+            app:layout_constraintStart_toEndOf="@+id/tvCheckTip" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvCheckTip"
+            app:layout_constraintBottom_toTopOf="@+id/btnDrawLots"
+            tools:listitem="@layout/item_restaurant_name"/>
+
+        <Button
+            android:id="@+id/btnDrawLots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/draw_lots"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

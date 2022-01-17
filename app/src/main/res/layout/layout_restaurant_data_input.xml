@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:constraint_referenced_ids="etAreaName,etRestaurantName,etRestaurantPhone,etRestaurantAddress,etRestaurantGoogleRatio,etRestaurantHasPark,etRestaurantPrice,etRestaurantMap" />
+
+        <com.hello780831.restaurant.ui.CustomEditText
+            android:id="@+id/etAreaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="text"
+            app:title="@string/restaurantArea"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.hello780831.restaurant.ui.CustomEditText
+            android:id="@+id/etRestaurantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="text"
+            app:title="@string/restaurantName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.hello780831.restaurant.ui.CustomEditText
+            android:id="@+id/etRestaurantPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="phone"
+            app:title="@string/restaurantPhone"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.hello780831.restaurant.ui.CustomEditText
+            android:id="@+id/etRestaurantAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="text"
+            app:title="@string/restaurantAddress"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.hello780831.restaurant.ui.CustomEditText
+            android:id="@+id/etRestaurantGoogleRatio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="numberDecimal"
+            app:title="@string/googleRatio"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.hello780831.restaurant.ui.CustomEditText
+            android:id="@+id/etRestaurantHasPark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:focusable="false"
+            app:title="@string/hasPark"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.hello780831.restaurant.ui.CustomEditText
+            android:id="@+id/etRestaurantPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:focusable="false"
+            app:title="@string/restaurantPrice"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.hello780831.restaurant.ui.CustomEditText
+            android:id="@+id/etRestaurantMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="text"
+            app:title="@string/restaurantMapLink"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

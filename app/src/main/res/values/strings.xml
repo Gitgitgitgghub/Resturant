@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">美食抽籤</string>
+
+    <string name="edit_restaurant">編輯餐廳清單</string>
+    <string name="fast_draw_lots">快速抽籤</string>
+    <string name="about_us">關於我們</string>
+    <string name="draw_lots">抽籤</string>
+    <string name="edit">編輯</string>
+    <string name="selectAll">全部選擇/取消</string>
+    <string name="addRestaurant">新增餐廳</string>
+    <string name="editRestaurant">編輯餐廳</string>
+    <string name="deleteRestaurant">刪除餐廳</string>
+    <string name="checkToAddOrDelete">勾選餐廳</string>
+    <string name="applyAdd">確定新增</string>
+    <string name="cancelAdd">放棄新增</string>
+    <string name="applyEdit">確定編輯</string>
+    <string name="cancelEdit">放棄編輯</string>
+    <string name="restaurantArea">餐廳地區</string>
+    <string name="restaurantName">餐廳名稱</string>
+    <string name="restaurantAddress">餐廳地址</string>
+    <string name="restaurantPhone">餐廳電話</string>
+    <string name="restaurantMapLink">地圖連結</string>
+    <string name="googleRatio">Google評分\n(1.0–5.0)</string>
+    <string name="hasPark">是否有車位</string>
+    <string name="restaurantPrice">餐廳價位</string>
+    <string name="inputDataError">輸入資料錯誤</string>
+    <string name="selectEditRestaurantCountError">編輯餐廳最多只能選擇一個</string>
+    <string name="aboutMeTitle">這是一個我的畢業專題</string>
+    <string name="aboutMeName">107153012 陳品逸</string>
+    <string name="aboutMeTeacher">指導老師:夏傳儀 老師</string>
+    <string name="star">⭐</string>
+    <string name="backMain">回到主選單</string>
+</resources>

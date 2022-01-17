@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_background1"
+        tools:context=".ui.EditRestaurant.EditRestaurantActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/flowButtons">
+
+            <include
+                android:id="@+id/layoutInput"
+                layout="@layout/layout_restaurant_data_input"/>
+
+        </ScrollView>
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flowButtons"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:constraint_referenced_ids="btnApplyAdd,btnCancelAdd"/>
+
+        <Button
+            android:id="@+id/btnApplyAdd"
+            android:text="@string/applyAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnCancelAdd"
+            android:text="@string/cancelAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
